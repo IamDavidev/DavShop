@@ -12,34 +12,32 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background--color: #1b262c;
-		--text--color: #fff;
-		--card--color: #000;
 		--btn--color: #0d7377;
+		--card--color: #000;
+		--effect--gray: #494949;
+		--text--color: #fff;
 		--title--card--color: #32e0c4;
 	}
 }
 
 html,
 body {
-	padding: 0;
-	margin: 0;
+	background-color: var(--background--color);
 	box-sizing: border-box;
+	color: var(--text--color);
+	font-family: 'Red Hat Mono', monospace;
+	font-size: 1rem;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
 }
 
-main {
-	font-family: 'Red Hat Mono', monospace;
-	font-weight: 400;
-	font-size: 1rem;
-	background-color: var(--background--color);
-	color: var(--text--color);
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+.davshop {
 	align-items: center;
+	margin: 0;
 	min-height: 100vh;
-	padding: 3rem;
+	padding: 0;
+	padding: 1rem 2rem;
 	& h1 {
 		padding: 0;
 		margin: 0;

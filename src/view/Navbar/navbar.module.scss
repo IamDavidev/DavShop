@@ -1,0 +1,54 @@
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 3rem;
+}
+
+.navPictureImage {
+	width: 50px;
+	height: 50px;
+}
+
+.navLinks {
+	display: flex;
+	min-width: 800px;
+	align-items: center;
+	justify-content: space-evenly;
+
+	& .navLinksPages {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		& .navPagesLink {
+			margin: 0 0.5;
+			text-decoration: none;
+			color: #fff;
+			font-weight: 400;
+			padding: 0 0.5rem;
+			transition: 0.5s ease-in-out;
+			&:hover {
+				color: var(--title--card--color);
+				text-decoration: none;
+			}
+		}
+	}
+
+	& .navSearch {
+		& .navSearchInput {
+			background: none;
+			border: none;
+			padding: 0.5rem;
+			border-radius: 0.5rem;
+			font-family: 'Red Hat Mono', monospace;
+			position: relative;
+			color: var(--text--color);
+			font-family: 'Courier New', Courier, monospace;
+			border: 2px solid #ccc;
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
