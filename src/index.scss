@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background--color: #f4f9f9;
+		--text--color: #a3e4db;
+		--card--color: #ccf2f4;
+		--btn--color: #a4ebf3;
+		--title--card--color: #aaaaaa;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background--color: #1b262c;
+		--text--color: #fff;
+		--card--color: #000;
+		--btn--color: #0d7377;
+		--title--card--color: #32e0c4;
+	}
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+main {
+	font-family: 'Red Hat Mono', monospace;
+	font-weight: 400;
+	font-size: 1rem;
+	background-color: var(--background--color);
+	color: var(--text--color);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 100vh;
+	padding: 3rem;
+	& h1 {
+		padding: 0;
+		margin: 0;
+	}
+}
