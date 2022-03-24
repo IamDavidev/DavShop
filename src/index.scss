@@ -11,12 +11,14 @@
 }
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background--color: #1b262c;
-		--btn--color: #0d7377;
-		--card--color: #000;
+		--background--color: #020202;
+		--btn--color: #3992ff;
+		--card--color: #1e1e1e;
 		--effect--gray: #494949;
 		--text--color: #fff;
-		--title--card--color: #32e0c4;
+		--title--card--color: #992dff;
+		--effect--color: #fbcc1b;
+		--span--color: #3defe9;
 	}
 }
 
@@ -42,4 +44,8 @@ body {
 		padding: 0;
 		margin: 0;
 	}
+}
+.active {
+	color: var(--title--card--color) !important;
+	font-weight: 500 !important;
 }
